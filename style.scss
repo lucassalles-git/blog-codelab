@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+@mixin date {
+    color: $brand-color;
+    font-family: $paragraph-font;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19.36px;
+}
+
+@mixin title {
+    font-family: $title-font;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30.62px;
+    color: $dark-60;
+}
+
+@mixin paragraph {
+    font-family: $paragraph-font;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+    color: #AFABB6;
+}
+
+$brand-color: #E07B67;
+$dark-10: #121214;
+$dark-20: #17171A;
+$dark-30: #202024;
+$dark-40: #252529;
+$dark-50: #AFABB6;
+$dark-60: #FFFFFF;
+
+$title-font: "Space Grotesk", sans-serif;
+$paragraph-font: "Inter", sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 283px;
+    border: 0 0 2px 0;
+    background-color: $dark-20;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media(min-width: 162px) and (max-width: 319px) {
+        height: 133px;
+    }
+
+    @media(min-width: 320px) and (max-width: 654px) {
+        height: 208px;
+
+    }
+
+    h1 {
+        display: flex;
+        color: $dark-60;
+        font-family: $title-font;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 51.04px;
+        padding-bottom: 38px;
+
+        @media(min-width: 162px) and (max-width: 319px) {
+            padding-bottom: 20px;
+            font-size: 24px;
+            line-height: 30.62px;
+        }
+
+        @media(min-width: 320px) and (max-width: 654px) {
+            font-size: 24px;
+            line-height: 30.62px;
+        }
+
+
+        .code {
+            color: $brand-color;
+        }
+    }
+
+    input {
+        width: 1216px;
+        height: 56px;
+        background-color: $dark-30;
+        border-radius: 8px;
+        border: 2px solid $dark-40;
+        padding: 16px 24px;
+        font-family: $paragraph-font;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24.2px;
+        color: $dark-50;
+
+        @media(min-width: 162px) and (max-width: 319px) {
+            padding: 0;
+            width: 85%;
+            height: 42px;
+            text-align: center;
+            font-size: 10px;
+            line-height: 16.94px;
+
+        }
+
+        @media(min-width: 320px) and (max-width: 654px) {
+            width: 85%;
+            height: 49px;
+            font-size: 14px;
+            line-height: 16.94px;
+        }
+
+        @media(min-width: 655px) and (max-width: 1290px) {
+            width: 92%;
+        }
+
+    }
+}
+
+body {
+    background-color: $dark-10;
+}
+
+main {
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px; //espaçamento entre os elementos
+
+    @media(min-width: 162px) and (max-width: 319px) {
+        padding: 24px 16px;
+    }
+
+    @media(min-width: 320px) and (max-width: 654px) {
+        padding: 40px 24px;
+    }
+
+    @media(min-width: 655px) and (max-width: 1290px) {
+        padding: 56px 32px;
+    }
+
+    section {
+        border: 2px solid $dark-40;
+        border-radius: 8px;
+        padding: 40px;
+        width: 1216px;
+
+        @media(min-width: 162px) and (max-width: 319px) {
+            width: 99%;
+            padding: 20px 16px;
+        }
+
+        @media(min-width: 320px) and (max-width: 654px) {
+            width: 99%;
+            height: 100%;
+            padding: 32px 24px;
+        }
+
+        @media(min-width: 655px) and (max-width: 1290px) {
+            width: 99%;
+
+        }
+    }
+
+    section:hover {
+        border: 2px solid $brand-color;
+    }
+
+    div {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 20px;
+
+    }
+
+    .date {
+        @include date;
+
+        @media(min-width: 162px) and (max-width: 319px) {
+            width: 50px;
+            font-size: 10px;
+            line-height: 13.10px;
+            text-align: left;
+        }
+
+        @media(min-width: 320px) and (max-width: 654px) {
+            font-size: 12px;
+            line-height: 14.52px;
+        }
+
+        @media(min-width: 655px) and (max-width: 1290px) {
+            font-size: 14px;
+            line-height: 16.94px;
+        }
+    }
+
+    img {
+
+        @media(min-width: 162px) and (max-width: 319px) {
+            width: 13px;
+            height: 12px;
+        }
+
+        @media(min-width: 320px) and (max-width: 654px) {
+            width: 17.5px;
+            height: 15px;
+        }
+
+        @media(min-width: 655px) and (max-width: 1290px) {
+            width: 21px;
+            height: 18px;
+        }
+    }
+
+    h2 {
+        @include title;
+        padding-bottom: 16px;
+
+        @media(min-width: 162px) and (max-width: 319px) {
+            font-weight: bolder;
+            font-size: 10px;
+            line-height: 18px;
+            text-align: center;
+        }
+
+        @media(min-width: 320px) and (max-width: 654px) {
+            font-size: 20px;
+            line-height: 25.52px;
+        }
+
+        @media(min-width: 655px) and (max-width: 1290px) {
+            font-size: 20px;
+            line-height: 25.52px;
+        }
+    }
+
+    p {
+        @include paragraph;
+
+        @media(min-width: 162px) and (max-width: 319px) {
+            font-size: 10px;
+            line-height: 15px;
+            text-align: center;
+        }
+
+        @media(min-width: 320px) and (max-width: 654px) {
+            font-size: 14px;
+            line-height: 22.4px;
+        }
+
+        @media(min-width: 655px) and (max-width: 1290px) {
+            font-size: 16px;
+            line-height: 25.6px;
+        }
+    }
+}
+
+footer {
+    width: 99vw;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $dark-60;
+    font-family: $paragraph-font;
+    font-weight: 500;
+    font-size: 15px;
+
+    @media(min-width: 162px) and (max-width: 319px) {
+        font-size: 9px;
+    }
+
+    @media(min-width: 320px) and (max-width: 654px) {
+        font-size: 11px;
+    }
+
+    @media(min-width: 655px) and (max-width: 1290px) {
+        font-size: 13px;
+    }
+
+    a {
+        color: $dark-60;
+        text-decoration: none;
+
+    }
+
+    a:hover {
+        text-decoration: underline;
+        color: $brand-color;
+    }
+}

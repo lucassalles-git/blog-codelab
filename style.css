@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 283px;
+  border: 0 0 2px 0;
+  background-color: #17171A;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 162px) and (max-width: 319px) {
+  header {
+    height: 133px;
+  }
+}
+@media (min-width: 320px) and (max-width: 654px) {
+  header {
+    height: 208px;
+  }
+}
+header h1 {
+  display: flex;
+  color: #FFFFFF;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 51.04px;
+  padding-bottom: 38px;
+}
+@media (min-width: 162px) and (max-width: 319px) {
+  header h1 {
+    padding-bottom: 20px;
+    font-size: 24px;
+    line-height: 30.62px;
+  }
+}
+@media (min-width: 320px) and (max-width: 654px) {
+  header h1 {
+    font-size: 24px;
+    line-height: 30.62px;
+  }
+}
+header h1 .code {
+  color: #E07B67;
+}
+header input {
+  width: 1216px;
+  height: 56px;
+  background-color: #202024;
+  border-radius: 8px;
+  border: 2px solid #252529;
+  padding: 16px 24px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24.2px;
+  color: #AFABB6;
+}
+@media (min-width: 162px) and (max-width: 319px) {
+  header input {
+    padding: 0;
+    width: 85%;
+    height: 42px;
+    text-align: center;
+    font-size: 10px;
+    line-height: 16.94px;
+  }
+}
+@media (min-width: 320px) and (max-width: 654px) {
+  header input {
+    width: 85%;
+    height: 49px;
+    font-size: 14px;
+    line-height: 16.94px;
+  }
+}
+@media (min-width: 655px) and (max-width: 1290px) {
+  header input {
+    width: 92%;
+  }
+}
+
+body {
+  background-color: #121214;
+}
+
+main {
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+@media (min-width: 162px) and (max-width: 319px) {
+  main {
+    padding: 24px 16px;
+  }
+}
+@media (min-width: 320px) and (max-width: 654px) {
+  main {
+    padding: 40px 24px;
+  }
+}
+@media (min-width: 655px) and (max-width: 1290px) {
+  main {
+    padding: 56px 32px;
+  }
+}
+main section {
+  border: 2px solid #252529;
+  border-radius: 8px;
+  padding: 40px;
+  width: 1216px;
+}
+@media (min-width: 162px) and (max-width: 319px) {
+  main section {
+    width: 99%;
+    padding: 20px 16px;
+  }
+}
+@media (min-width: 320px) and (max-width: 654px) {
+  main section {
+    width: 99%;
+    height: 100%;
+    padding: 32px 24px;
+  }
+}
+@media (min-width: 655px) and (max-width: 1290px) {
+  main section {
+    width: 99%;
+  }
+}
+main section:hover {
+  border: 2px solid #E07B67;
+}
+main div {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+main .date {
+  color: #E07B67;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19.36px;
+}
+@media (min-width: 162px) and (max-width: 319px) {
+  main .date {
+    width: 50px;
+    font-size: 10px;
+    line-height: 13.1px;
+    text-align: left;
+  }
+}
+@media (min-width: 320px) and (max-width: 654px) {
+  main .date {
+    font-size: 12px;
+    line-height: 14.52px;
+  }
+}
+@media (min-width: 655px) and (max-width: 1290px) {
+  main .date {
+    font-size: 14px;
+    line-height: 16.94px;
+  }
+}
+@media (min-width: 162px) and (max-width: 319px) {
+  main img {
+    width: 13px;
+    height: 12px;
+  }
+}
+@media (min-width: 320px) and (max-width: 654px) {
+  main img {
+    width: 17.5px;
+    height: 15px;
+  }
+}
+@media (min-width: 655px) and (max-width: 1290px) {
+  main img {
+    width: 21px;
+    height: 18px;
+  }
+}
+main h2 {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30.62px;
+  color: #FFFFFF;
+  padding-bottom: 16px;
+}
+@media (min-width: 162px) and (max-width: 319px) {
+  main h2 {
+    font-weight: bolder;
+    font-size: 10px;
+    line-height: 18px;
+    text-align: center;
+  }
+}
+@media (min-width: 320px) and (max-width: 654px) {
+  main h2 {
+    font-size: 20px;
+    line-height: 25.52px;
+  }
+}
+@media (min-width: 655px) and (max-width: 1290px) {
+  main h2 {
+    font-size: 20px;
+    line-height: 25.52px;
+  }
+}
+main p {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  color: #AFABB6;
+}
+@media (min-width: 162px) and (max-width: 319px) {
+  main p {
+    font-size: 10px;
+    line-height: 15px;
+    text-align: center;
+  }
+}
+@media (min-width: 320px) and (max-width: 654px) {
+  main p {
+    font-size: 14px;
+    line-height: 22.4px;
+  }
+}
+@media (min-width: 655px) and (max-width: 1290px) {
+  main p {
+    font-size: 16px;
+    line-height: 25.6px;
+  }
+}
+
+footer {
+  width: 99vw;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+}
+@media (min-width: 162px) and (max-width: 319px) {
+  footer {
+    font-size: 9px;
+  }
+}
+@media (min-width: 320px) and (max-width: 654px) {
+  footer {
+    font-size: 11px;
+  }
+}
+@media (min-width: 655px) and (max-width: 1290px) {
+  footer {
+    font-size: 13px;
+  }
+}
+footer a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+  color: #E07B67;
+}/*# sourceMappingURL=style.css.map */
